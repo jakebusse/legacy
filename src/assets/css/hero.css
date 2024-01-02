@@ -1,0 +1,112 @@
+@import "./global.css";
+
+.hero-content {
+  width: 100vw;
+  min-height: 500px;
+  height: 100vh;
+  background-image: radial-gradient(
+    farthest-side at 50vw 100vh,
+    var(--secondary-color) 0%,
+    var(--primary-color) 100%
+  );
+  color: var(--hero-font-color);
+  text-align: center;
+  user-select: none;
+}
+
+.navbar {
+  display: flex block;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  color: var(--hero-font-color);
+  user-select: none;
+  z-index: 25;
+}
+
+.nav-item {
+  margin: 5px 10px;
+}
+
+.nav-title {
+  margin: 5px 20px;
+  font-size: 24px;
+}
+
+.nav-link {
+  border: 1px solid transparent;
+  transition: border-bottom 1s, color 1s;
+  background-color: transparent;
+  color: var(--hero-font-color);
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  border-bottom-color: white;
+  cursor: pointer;
+  color: white;
+}
+
+/*
+@keyframes navButtonHover {
+  0% {
+    background-color: transparent;
+    color: var(--hero-font-color);
+  }
+  100% {
+    background-color: var(--hero-font-color);
+    color: var(--primary-color);
+  }
+}
+*/
+
+.nav-button {
+  border: 1px solid var(--hero-font-color);
+  background-color: transparent;
+  color: var(--hero-font-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 50%;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.nav-button:hover {
+  background-color: var(--hero-font-color);
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.nav-container {
+  margin: 5px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media only screen and (max-width: 825px) {
+  #anchors {
+    display: none;
+  }
+}
+
+.hero-avatar {
+  margin: auto;
+  margin-top: 20vh;
+  background-image: url(../img/avatar.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 200px;
+}
+
+.hero-title {
+  font-size: 48px;
+  margin-top: 10px;
+}
+
+.hero-subtitle {
+  font-size: 24px;
+}
